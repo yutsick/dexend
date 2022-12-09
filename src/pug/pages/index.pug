@@ -1,0 +1,432 @@
+extends ../layout/layout.pug
+
+block header
+  header.header
+    .header__offer-wrapper
+      ul.header__links
+        li.header__link
+          a(href='#')
+            | Behance
+            img(src='img/arrow_header-link.svg' alt='arrow_header-link')
+        li.header__link
+          a(href='#')
+            | Dribbble
+            img(src='img/arrow_header-link.svg' alt='arrow_header-link')
+        li.header__link
+          a(href='#')
+            | Facebook
+            img(src='img/arrow_header-link.svg' alt='arrow_header-link')
+        li.header__link
+          a(href='#')
+            | Twitter
+            img(src='img/arrow_header-link.svg' alt='arrow_header-link')
+        li.header__link
+          a(href='#')
+            | Medium
+            img(src='img/arrow_header-link.svg' alt='arrow_header-link')
+        li.header__link
+          a(href='#')
+            | Linkedin
+            img(src='img/arrow_header-link.svg' alt='arrow_header-link')
+
+
+      .header__offer
+        h1.header__offer-title
+          | We Create Digital <br> 
+          span Products
+        a.btn.header__offer-btn(href='#')
+          | Submit Request
+
+      .header__clickme-wrapper
+        a.header__clickme-button(href='#')
+          img(src='img/more_button.svg' alt='Show')
+        img.header__clickme-bg(src='img/more-projects.svg' alt='')
+        img.header__clickme-arrow(src='img/click-me_button.svg' alt='Click me')
+    .header__media
+      .header__media-bg 
+        img(src="img/header__media-bg.png")
+      .header__media-river 
+        img(src="img/header__media-river.png")
+
+
+
+block content
+  section.statistics
+    .container-fluid
+      .statistics__wrapper
+        .statistics__item
+          .statistics__item-content
+            span.statistics__title Established
+            span.info-value.statistics__value 2017
+        
+        .statistics__item
+          .statistics__item-content
+            span.statistics__title Completed Cases
+            span.info-value.statistics__value 640+
+        
+        .statistics__item
+          .statistics__item-content
+            span.statistics__title Team Size
+            span.info-value.statistics__value 25
+        
+        .statistics__item
+          .statistics__item-content
+            span.statistics__title Markets Served
+            span.info-value.statistics__value 50+
+  
+  section.projects
+    .container-fluid
+      .projects__wrapper
+        a.projects__card(href='#')
+          h3.projects__card-title Princeton University
+          ul.projects__card-tags 
+            li Dashboard
+            li Branding
+            li Mobile
+            
+          img(src="img/project-img1.jpg", alt="Project image").projects__card-img
+
+        a.projects__card(href='#')
+          h3.projects__card-title Schedule
+          ul.projects__card-tags 
+            li Dashboard
+            li Branding
+            li Mobile
+
+          img(src="img/project-img2.jpg", alt="Project image").projects__card-img
+        
+        a.projects__card(href='#')
+          h3.projects__card-title Bestheals
+          ul.projects__card-tags 
+            li Dashboard
+            li Branding
+
+          img(src="img/project-img3.jpg", alt="Project image").projects__card-img
+        
+        a.projects__card(href='#')
+          h3.projects__card-title Praise Casino
+          ul.projects__card-tags 
+            li Dashboard
+            li Branding
+            li Mobile
+
+          img(src="img/project-img4.jpg", alt="Project image").projects__card-img
+        
+        a.projects__card(href='#')
+          h3.projects__card-title CO2 Negative <br> Website
+          ul.projects__card-tags 
+            li Dashboard
+            li Branding
+            li Mobile
+
+          img(src="img/project-img5.jpg", alt="Project image").projects__card-img
+        
+        a.projects__card(href='#')
+          h3.projects__card-title Homebud
+          ul.projects__card-tags 
+            li Dashboard
+            li Branding
+            li Mobile
+
+          img(src="img/project-img6.jpg", alt="Project image").projects__card-img
+        
+        a.projects__card(href='#')
+          h3.projects__card-title Delivery Food
+          ul.projects__card-tags 
+            li Dashboard
+            li Branding
+            li Mobile
+
+          img(src="img/project-img7.jpg", alt="Project image").projects__card-img
+        
+        .projects__card.projects__card_white
+          .projects-links
+            .projects-links__col
+              .projects-links__more
+                a.btn.btn-circle(href='#')
+                h3.projects-links__title More <br> projects
+            .projects-links__col
+              .projects-links__category
+                a(href='#') Landing page
+                span 156
+                a(href='#') Mobile app
+                span 68
+                a(href='#') Dashbord
+                span 36
+                a(href='#') Prototyping
+                span 24
+                a(href='#') Branding
+                span 19
+                a(href='#') Logo
+                span 7
+  section.specialization
+    .container-fluid
+
+      .specialization__heading
+        .specialization__title
+          span.specialization__suptitle Expertize
+          h2 What we do?
+        a.btn.btn-circle(href='#')
+      
+      .specialization__content
+        .specialization__content-item
+          .specialization__content-box
+            img(width='90' height='90' src='img/specialization-icon1.svg' alt='Web design')
+            h4.specialization__content-title Web design
+            .specialization__content-wrapper
+              span.specialization__category UX/UI Design
+              span.specialization__category Prototyping
+              span.specialization__category Design audit
+        
+        .specialization__content-item
+          .specialization__content-box
+            img(width='90' height='90' src='img/specialization-icon2.svg' alt='Mobile apps')
+            h4.specialization__content-title Mobile apps
+            .specialization__content-wrapper
+              span.specialization__category UX/UI Design
+              span.specialization__category Prototyping
+              span.specialization__category Design audit
+        
+        .specialization__content-item
+          .specialization__content-box
+            img(width='90' height='90' src='img/specialization-icon3.svg' alt='Branding')
+            h4.specialization__content-title Branding
+            .specialization__content-wrapper
+              span.specialization__category Brand
+              span.specialization__category Naming
+              span.specialization__category Branding styleguide
+              span.specialization__category Marketing materials
+        
+        .specialization__content-item
+          .specialization__content-box
+            img(width='90' height='90' src='img/specialization-icon4.svg' alt='Development')
+            h4.specialization__content-title Development
+            .specialization__content-wrapper
+              span.specialization__category Frontend
+              span.specialization__category Java
+              span.specialization__category Backend
+              span.specialization__category Python
+              span.specialization__category Wordpress
+              
+
+  section.about
+    .container-fluid.container-fluid_small
+      .about__wrapper
+        .about__heading
+          span.about__suptitle Agency information
+          h2.about__title About us
+        p.about__text
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis amet nec faucibus turpis mi, nibh. Enim massa sem ut diam in sodales. Turpis nam egestas auctor libero ac amet dis scelerisque blandit. Commodo eu non amet aenean ut nisl, eget. Augue facilisi id egestas consectetur bibendum.
+        .about__info-wrapper
+          a.btn.btn-circle.about__info-btn(href='#')
+          img(src='img/about-us_stickers.png' alt='')
+          .about__info
+            .about__card
+              span.about__info-title Established since
+              span.about__info-value 2017
+            .about__card
+              span.about__info-title Design Laboratory
+              span.about__info-value Kyiv, Ukraine
+            .about__card
+              span.about__info-title Number of Industries
+              span.about__info-value 50+
+            .about__card
+              span.about__info-title Specialization
+              span.about__info-value Digital Products
+  section.team
+    .container-fluid.container-fluid_small
+      .row
+        .col-5
+          .team__heading
+            h2.team__title The Crew
+            .team-counter
+              span.team-counter__value 25
+              span people
+        .col-2.d-flex.justify-content-center
+          a.btn.btn-circle(href='#')
+        .col-5
+          .team__subtitle
+            | "This team is fantastic. A true asset to your next engagement and project assignment.  I will certainly be using their artists for Further work" (client`s feedback)
+    .container-fluid
+      .team-slider.splide
+        .splide__track
+          ul.splide__list
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo1.jpg' alt='')
+                span.team-slider__card-name Andrey Sheremeta
+                span.team-slider__card-profession CEO Betasprint
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo2.jpg' alt='')
+                span.team-slider__card-name Tung Chang
+                span.team-slider__card-profession Project manager
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo3.jpg' alt='')
+                span.team-slider__card-name Tung Chang
+                span.team-slider__card-profession Project manager
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo4.jpg' alt='')
+                span.team-slider__card-name Andrey Sheremeta
+                span.team-slider__card-profession CEO Betasprint
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo5.jpg' alt='')
+                span.team-slider__card-name Tung Chang
+                span.team-slider__card-profession Project manager
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo1.jpg' alt='')
+                span.team-slider__card-name Tung Chang
+                span.team-slider__card-profession Project manager
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo3.jpg' alt='')
+                span.team-slider__card-name Andrey Sheremeta
+                span.team-slider__card-profession CEO Betasprint
+  section.feedback
+    .container-fluid.container-fluid_small
+      .row
+        .col-12.col-md-6
+          .feedback-slider.splide
+            .splide__arrows
+              button.feedback-slider__arrow.splide__arrow.splide__arrow--prev
+              button.feedback-slider__arrow.splide__arrow.splide__arrow--next
+            .splide__track
+              ul.splide__list
+                li.splide__slide
+                  .feedback__card
+                    .feedback__card-head
+                      .feedback__card-user
+                        img.feedback__user-photo(src='img/our-team_photo4.jpg' alt='')
+                        .feedback__user-info
+                          span.feedback__user-name Alexander Rolinitis
+                          span.feedback__user-subinfo CEO Cyberjin
+                          a.feedback__user-link(href='#') cyberjin.com
+                    .feedback__card-text
+                      p
+                        | Andrey did amazing work. He is a very skilled designer and has an excellent eye for quality. We gave him the task of making a Figma design based on another site and he far exceeded our expectations. He was very easy to work with and was very fast. Would highly recommend him
+
+                li.splide__slide
+                  .feedback__card
+                    .feedback__card-head
+                      .feedback__card-user
+                        img.feedback__user-photo(src='img/our-team_photo3.jpg' alt='')
+                        .feedback__user-info
+                          span.feedback__user-name Alexander Rolinitis
+                          span.feedback__user-subinfo CEO Cyberjin
+                          a.feedback__user-link(href='#') cyberjin.com
+                    .feedback__card-text
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id scelerisque quam ac amet est sed. Suspendisse quisque nec molestie sagittis. Venenatis, iaculis elit, quam at eu orci mattis. Rhoncus gravida vulputate vitae vehicula ultricies.
+                        br
+                        br
+                        |                                                 Vitae, mauris vitae lectus lorem. Tempus diam viverra dolor donec. Tincidunt nunc elit at eget euismod leo faucibus tristique lectus. Tellus in ipsum, nam tortor. Imperdiet ultrices et interdum nunc porta erat pretium.
+                li.splide__slide
+                  .feedback__card
+                    .feedback__card-head
+                      .feedback__card-user
+                        img.feedback__user-photo(src='img/our-team_photo2.jpg' alt='')
+                        .feedback__user-info
+                          span.feedback__user-name Alexander Rolinitis
+                          span.feedback__user-subinfo CEO Cyberjin
+                          a.feedback__user-link(href='#') cyberjin.com
+                    .feedback__card-text
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id scelerisque quam ac amet est sed. Suspendisse quisque nec molestie sagittis. Venenatis, iaculis elit, quam at eu orci mattis. Rhoncus gravida vulputate vitae vehicula ultricies.
+                        br
+                        br
+                        |                                                 Vitae, mauris vitae lectus lorem. Tempus diam viverra dolor donec. Tincidunt nunc elit at eget euismod leo faucibus tristique lectus. Tellus in ipsum, nam tortor. Imperdiet ultrices et interdum nunc porta erat pretium.
+                li.splide__slide
+                  .feedback__card
+                    .feedback__card-head
+                      .feedback__card-user
+                        img.feedback__user-photo(src='img/our-team_photo1.jpg' alt='')
+                        .feedback__user-info
+                          span.feedback__user-name Alexander Rolinitis
+                          span.feedback__user-subinfo CEO Cyberjin
+                          a.feedback__user-link(href='#') cyberjin.com
+                    .feedback__card-text
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id scelerisque quam ac amet est sed. Suspendisse quisque nec molestie sagittis. Venenatis, iaculis elit, quam at eu orci mattis. Rhoncus gravida vulputate vitae vehicula ultricies.
+                        br
+                        br
+                        |                                                 Vitae, mauris vitae lectus lorem. Tempus diam viverra dolor donec. Tincidunt nunc elit at eget euismod leo faucibus tristique lectus. Tellus in ipsum, nam tortor. Imperdiet ultrices et interdum nunc porta erat pretium.
+                li.splide__slide
+                  .feedback__card
+                    .feedback__card-head
+                      .feedback__card-user
+                        img.feedback__user-photo(src='img/our-team_photo4.jpg' alt='')
+                        .feedback__user-info
+                          span.feedback__user-name Alexander Rolinitis
+                          span.feedback__user-subinfo CEO Cyberjin
+                          a.feedback__user-link(href='#') cyberjin.com
+                    .feedback__card-text
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id scelerisque quam ac amet est sed. Suspendisse quisque nec molestie sagittis. Venenatis, iaculis elit, quam at eu orci mattis. Rhoncus gravida vulputate vitae vehicula ultricies.
+                        br
+                        br
+                        |                                                 Vitae, mauris vitae lectus lorem. Tempus diam viverra dolor donec. Tincidunt nunc elit at eget euismod leo faucibus tristique lectus. Tellus in ipsum, nam tortor. Imperdiet ultrices et interdum nunc porta erat pretium.
+                li.splide__slide
+                  .feedback__card
+                    .feedback__card-head
+                      .feedback__card-user
+                        img.feedback__user-photo(src='img/our-team_photo5.jpg' alt='')
+                        .feedback__user-info
+                          span.feedback__user-name Alexander Rolinitis
+                          span.feedback__user-subinfo CEO Cyberjin
+                          a.feedback__user-link(href='cyberjin.com') cyberjin.com
+                    .feedback__card-text
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id scelerisque quam ac amet est sed. Suspendisse quisque nec molestie sagittis. Venenatis, iaculis elit, quam at eu orci mattis. Rhoncus gravida vulputate vitae vehicula ultricies.
+                        br
+                        br
+                        |                                                 Vitae, mauris vitae lectus lorem. Tempus diam viverra dolor donec. Tincidunt nunc elit at eget euismod leo faucibus tristique lectus. Tellus in ipsum, nam tortor. Imperdiet ultrices et interdum nunc porta erat pretium.
+        .col-12.col-md-6
+          .feedback__heading
+            h2.feedback__title Work <br> History
+            span.feedback__subtitle We collect honest feedback from every client
+            .feedback__buttons
+              a.btn.btn-circle(href='#')
+              span.feedback__btn-subscr More than 100 loyal partners...
+  section.partners
+    .partners-slider.partners-slider_ltr.splide
+      .splide__track
+        ul.splide__list
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Starbucks.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Delta.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_HiltonHotels.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_NIKE.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Mastercard.png' alt='')
+    .partners-slider.partners-slider_rtl.splide
+      .splide__track
+        ul.splide__list
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Starbucks.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Delta.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_HiltonHotels.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_NIKE.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Mastercard.png' alt='')
+  
+  

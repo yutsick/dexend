@@ -1,0 +1,61 @@
+footer.contacts
+  .container-fluid.container-fluid_small
+    .row
+      .col-12.col-xl-6
+        .contacts__form-wrapper
+          h2.contacts__form-title Contact Us <br> for Estimation
+          form.contacts__form(action='')
+            input(type='text' placeholder='Name' required='')
+            input(type='email' placeholder='Email' required='')
+            select(name='' id='' required='')
+              option(selected='' disabled='') Select a project direction
+              option(value='') Web
+              option(value='') Mobile apps
+            input(type='text' placeholder='Brief Project Description' required='')
+            button(type='submit') Send
+
+      .col-12.col-xl-6
+        .contacts__info-wrapper
+          ul.contacts__info-links
+            li
+              a(href='#', aria-label="Behance")
+                img(src='img/behance_icon.svg' alt='Behance')
+            li
+              a(href='#', aria-label="Facebook")
+                img(src='img/facebook_icon.svg' alt='Facebook')
+            li
+              a(href='#', aria-label="Twitter")
+                img(src='img/twitter_icon.svg' alt='Twitter')
+            li
+              a(href='#', aria-label="???")
+                img(src='img/contacts_icon.svg' alt='???')
+            li
+              a(href='#', aria-label="Linkedin")
+                img(src='img/linkedin_icon.svg' alt='Linkedin')
+            li
+              a(href='#', aria-label="Dribbble")
+                img(src='img/dribbble_icon.svg' alt='Dribbble')
+          .contacts__info
+            span.contacts__info-suptitle Our Contacts
+            .contacts__info-phones
+              span +38 (097) 766 40 62
+              span +38 (097) 766 40 62
+            a.contacts__info-email(href='mailto:welcome@dexend.com') welcome@dexend.com
+            span.contacts__info-adress
+              | Business Center Olimpiyskiy
+              br
+              |  Kiev, Ukraine
+          a.btn.btn-circle(href='#')
+
+section.copy 
+  .copy-slider.splide
+    .splide__track
+      ul.splide__list
+        li.splide__slide
+          span © 2017-2022 Dexend
+        li.splide__slide
+          span © 2017-2022 Dexend
+        li.splide__slide
+          span © 2017-2022 Dexend
+        li.splide__slide
+          span © 2017-2022 Dexend
