@@ -172,8 +172,12 @@ h4 {
         padding-bottom: 20px;
     }
 
-    @media screen and (max-height: 950px) {
+    @media screen and (max-height: 950px) and (min-width: 1600px) {
         height: 930px;
+    }
+
+    @media screen and (max-height: 730px) and (max-width: 1600px) {
+        height: 700px;
     }
 
     &__offer-wrapper {
