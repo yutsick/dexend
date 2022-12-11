@@ -5,13 +5,18 @@ footer.contacts
         .contacts__form-wrapper
           h2.contacts__form-title Contact Us <br> for Estimation
           form.contacts__form(action='')
-            input(type='text' placeholder='Name' required='')
-            input(type='email' placeholder='Email' required='')
-            select(name='' id='' required='')
-              option(selected='' disabled='') Select a project direction
-              option(value='') Web
-              option(value='') Mobile apps
-            input(type='text' placeholder='Brief Project Description' required='')
+            .contacts__form__fieldset
+              input(type='text' placeholder='Name' required='')
+            .contacts__form__fieldset
+              input(type='email' placeholder='Email' required='')
+            .contacts__form__fieldset
+              select(name='' id='' required='')
+                option(selected='' disabled='') Select a project direction
+                option(value='') Web
+                option(value='') Mobile apps
+            .contacts__form__fieldset
+              input(type='text' placeholder='Brief Project Description' required='')
+              
             button(type='submit') Send
 
       .col-12.col-xl-6
