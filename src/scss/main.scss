@@ -130,7 +130,7 @@ h4 {
 .nav {
     position: absolute;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 40px;
     z-index: 1000;
 
     &__wrapper {
@@ -1201,11 +1201,6 @@ h4 {
 
     @media screen and (max-width: 1600px) {
         margin-bottom: 140px;
-
-        .btn-circle {
-            width: 100px;
-            height: 100px;
-        }
     }
 
     @media screen and (max-width: 1400px) {
@@ -1214,6 +1209,13 @@ h4 {
 
     @media screen and (max-width: 1200px) {
         margin-bottom: 100px;
+    }
+
+    .btn-circle {
+        @media screen and (max-width: 1600px) {
+            width: 76px;
+            height: 76px;
+        }
     }
     
     &__card {
