@@ -119,11 +119,7 @@ h4 {
         font-size: 20px;
     }
 }
-.info-value {
-    color: #373946;
-    font-weight: bold;
-    font-size: 36px;
-}
+
 @keyframes rotate {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -141,6 +137,12 @@ h4 {
         display: flex;
         justify-content: space-between;
         margin: 0 50px;
+
+        @media screen and (max-width: 1200px) {
+            margin: 0 5px;
+            max-width: 370px;
+            width: 100%;
+        }
     }
     &__burger {
         display: flex;
@@ -165,16 +167,33 @@ h4 {
 
 .header {
     display: flex;
-    height: 100vh;
+    height: auto;
     padding-bottom: 40px;
     overflow: hidden;
 
-    @media screen and (max-width: 1800px) {
-        padding-bottom: 20px;
+    @media screen and (min-width: 1800px) {
+        height:100vh;
+
+        @media screen and (max-height: 950px) {
+            height: auto;
+        }
     }
 
-    @media screen and (max-height: 950px) {
-        height: auto;
+    @media screen and (max-width: 1800px) {
+        padding-bottom: 20px;
+        height:100vh;
+
+        @media screen and (max-height: 775px) and (min-width: 1200px) {
+            height: auto;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        height:100vh;
+
+        @media screen and (max-height: 670px) {
+            height: auto;
+        }
     }
 
     &::after {
@@ -188,6 +207,10 @@ h4 {
         background-image: url('../img/header-bg-overlayer.svg');
         right: 0;
         top: 0;
+
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
     }
 
     &__offer-wrapper {
@@ -203,6 +226,11 @@ h4 {
         @media screen and (max-width: 1600px) {
             width: 47%;
         }
+
+        @media screen and (max-width: 1200px) {
+            width: 426px;
+            flex-shrink: 0;
+        }
     }
 
     &__links {
@@ -213,6 +241,10 @@ h4 {
         margin: 50px 50px 0 0;
         width: fit-content;
         margin-left: auto;
+
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
     }
     &__link {
         margin-bottom: 18px;
@@ -248,6 +280,11 @@ h4 {
             @media screen and (max-height: 730px) {
                 padding-top: 60px;
             }
+        }
+
+        @media screen and (max-width: 1200px)  {
+            padding-top: 145px;
+            margin-left: 16px;
         }
     }
     &__offer-title {
@@ -377,6 +414,21 @@ h4 {
         margin-top: 75px;
     }
 
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 90px;
+        margin-top: 55px;
+    }
+
+    &__value {
+        color: #373946;
+        font-weight: bold;
+        font-size: 36px;
+    
+        @media screen and (max-width: 1200px) {
+            font-size: 32px;
+        }
+    }
+
     &__wrapper {
         display: flex;
         align-items: center;
@@ -415,6 +467,10 @@ h4 {
     &__title {
         color: #8589A3;
         font-size: 20px;
+
+        @media screen and (max-width: 1600px) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -425,6 +481,14 @@ h4 {
 
     @media screen and (max-width: 1600px) {
         margin-bottom: 140px;
+    }
+
+    @media screen and (max-width: 1400px) {
+        margin-bottom: 120px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 100px;
     }
 
     &__wrapper {
@@ -439,6 +503,10 @@ h4 {
 
         @media screen and (max-width: 1400px) {
             gap: 75px 24px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            gap: 30px 24px;
         }
     }
 
@@ -464,6 +532,11 @@ h4 {
             padding: 38px 70px 38px 38px;
         }
 
+        @media screen and (max-width: 1200px) {
+            border-radius: 16px;
+            padding: 30px 55px 30px 30px;
+        }
+
         &-title {
             font-size: 54px;
             color: $black2;
@@ -475,6 +548,10 @@ h4 {
 
             @media screen and (max-width: 1400px) {
                 font-size: 34px;
+            }
+
+            @media screen and (max-width: 1200px) {
+                font-size: 28px;
             }
         }
 
@@ -568,6 +645,13 @@ h4 {
                 top: 37px;
                 right: 37px;
             }
+
+            @media screen and (max-width: 1200px) {
+                width: 14px;
+                height: 14px;
+                top: 30px;
+                right: 30px;
+            }
         }
     }
 
@@ -577,6 +661,11 @@ h4 {
 
         @media screen and (max-width: 1600px) {
             padding-right: 60px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            padding-right: 20px;
+            padding-left: 20px;
         }
 
         .projects-links__title {
@@ -672,6 +761,14 @@ h4 {
             margin-bottom: 70px;
         }
 
+        @media screen and (max-width: 1400px) {
+            padding-top: 120px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            padding-top: 100px;
+        }
+
         h2 {
             margin: 0;
         }
@@ -693,10 +790,18 @@ h4 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         border-bottom: 1px solid #E6EAF3;
-        padding-bottom: 180px;
+        padding-bottom: calc(180px - 7px);
 
         @media screen and (max-width: 1600px) {
             padding-bottom: 140px;
+        }
+
+        @media screen and (max-width: 1400px) {
+            padding-bottom: 120px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            padding-bottom: calc(100px - 12px);
         }
     }
 
@@ -710,12 +815,20 @@ h4 {
         display: flex;
         justify-content: center;
         padding: 0 15px;
+
+        @media screen and (max-width: 1200px) {
+            padding: 0 10px;
+        }
     }
 
     &__content-title {
         margin: 0;
         margin-top: 60px;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 1400px)  {
+            margin-top: 40px;
+        }
     }
 
     &__content-wrapper {
@@ -732,9 +845,15 @@ h4 {
         border-radius: 100px;
         padding: 7px 15px;
         margin: 0 15px 10px 0;
+        text-align: center;
+        line-height: 110%;
 
         @media screen and (max-width: 1600px) {
             font-size: 14px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            margin: 0 12px 12px 0;
         }
     }
 }
@@ -748,7 +867,16 @@ h4 {
 
     @media screen and (max-width: 1600px) {
         padding-top: 150px;
+        padding-bottom: 160px;
+    }
+
+    @media screen and (max-width: 1400px) {
+        padding-top: 100px;
         padding-bottom: 140px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding-bottom: 75px;
     }
 
     &:before {
@@ -766,6 +894,10 @@ h4 {
         @media screen and (max-width: 1600px) {
             left: -180px;
         }
+
+        @media screen and (max-width: 1400px) {
+            display: none;
+        }
     }
     &:after {
         content: "";
@@ -781,6 +913,10 @@ h4 {
 
         @media screen and (max-width: 1600px) {
             right: -200px;
+        }
+
+        @media screen and (max-width: 1400px) {
+            display: none;
         }
     }
 
@@ -820,6 +956,16 @@ h4 {
         margin-bottom: 50px;
         font-size: 18px;
         color: $gray2;
+
+        @media screen and (max-width: 1600px)  {
+            max-width: 940px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 16px;
+            margin-bottom: 45px;
+            max-width: 840px;
+        }
     }
     &__info-wrapper {
         background: linear-gradient(131.62deg, #FFFDF5 4.88%, #FFF5F5 85.46%);
@@ -877,6 +1023,15 @@ h4 {
         font-size: 22px;
         display: block;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 1600px) {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 1400px) {
+            font-size: 16px;
+        }
     }
     &__info-value {
         font-family: $secondaryFamily;
@@ -884,6 +1039,14 @@ h4 {
         color: $black2;
         line-height: 150%;
         font-size: 36px;
+
+        @media screen and (max-width: 1600px) {
+            font-size: 28px;
+        }
+
+        @media screen and (max-width: 1400px) {
+            font-size: 24px;
+        }
     }
     &__info-btn {
         border-color: #FF543D;
@@ -912,6 +1075,10 @@ h4 {
         margin-bottom: 120px;
     }
 
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 100px;
+    }
+
     &:before {
         content: "";
         width: 50%;
@@ -926,14 +1093,16 @@ h4 {
 
     .btn-circle {
         @media screen and (max-width: 1600px) {
-            width: 100px;
-            height: 100px;
+            width: 76px;
+            height: 76px;
         }
     }
 
     &__heading {
         display: flex;
         align-items: flex-start;
+        position: relative;
+        width: fit-content;
     }
 
     &__title {
@@ -948,17 +1117,25 @@ h4 {
         height: 100%;
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 14px;
+        }
+
+        *:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &-counter {
         color: $blue;
         font-weight: 700;
-        position: relative;
+        position: absolute;
+        right: -95px;
+        top: -25px;
         font-family: $secondaryFamily;
-        top: -15px;
         display: flex;
         align-items: baseline;
-        left: -10px;
 
         &__value {
             font-size: 36px;
@@ -974,6 +1151,7 @@ h4 {
     margin-left: -12px;
     margin-right: -12px;
     padding-top: 80px;
+
     &__card {
         display: flex;
         flex-direction: column;
@@ -984,6 +1162,12 @@ h4 {
             height: 300px;
             border-radius: 20px;
             margin-bottom: 30px;
+            object-fit: cover;
+
+            @media screen and (max-width: 1600px) {
+                width: 220px;
+                height: 236px;
+            }
         }
     }
 
@@ -993,11 +1177,20 @@ h4 {
         color: $black;
         margin: 0 0 8px 10px;
         font-family: $secondaryFamily;
+
+        @media screen and (max-width: 1600px) {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
     }
     &__card-profession {
         font-size: 16px;
         color: $gray3;
         margin-left: 10px;
+
+        @media screen and (max-width: 1600px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -1014,6 +1207,14 @@ h4 {
             height: 100px;
         }
     }
+
+    @media screen and (max-width: 1400px) {
+        margin-bottom: 110px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 100px;
+    }
     
     &__card {
         background: linear-gradient(116.65deg, #FFFBF2 -27.08%, #F6F5FF 102.22%);
@@ -1027,7 +1228,15 @@ h4 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 57px;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 1600px) {
+            margin-bottom: 67px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            margin-bottom: 39px;
+        }
     }
     &__card-user {
         display: flex;
@@ -1056,17 +1265,33 @@ h4 {
         font-family: $secondaryFamily;
         margin-bottom: 8px;
         display: block;
+        line-height: 120%;
+
+        @media screen and (max-width: 1600px) {
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
     }
     &__user-subinfo {
         color: $gray7;
         font-size: 18px;
         margin-bottom: 8px;
         display: block;
+        line-height: 120%;
+
+        @media screen and (max-width: 1600px) {
+            font-size: 16px;
+        }
     }
     &__user-link {
         text-decoration-line: underline;
         color: $blue2;
         font-size: 16px;
+        line-height: 120%;
+
+        @media screen and (max-width: 1600px) {
+            font-size: 14px;
+        }
     }
     &__card-text {
         padding: 53px 45px 30px 53px;
@@ -1074,6 +1299,13 @@ h4 {
         border-radius: 30px;
         position: relative;
         height: 100%;
+        color: #5C5F75;
+        font-size: 18px;
+
+        @media screen and (max-width: 1600px) {
+            padding: 40px;
+            font-size: 16px;
+        }
 
         &:before {
             content: "";
@@ -1081,14 +1313,18 @@ h4 {
             height: 30px;
             background-image: url(../img/feedback-quotes.svg);
             background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
             position: absolute;
             top: -16px;
-            left: 53px
-        }
+            left: 53px;
 
-        p {
-            color: #5C5F75;
-            font-size: 18px;
+            @media screen and (max-width: 1600px) {
+                width: 36px;
+                height: 28px;
+                top: -15px;
+                left: 40px;
+            }
         }
     }
     &__heading {
@@ -1105,12 +1341,20 @@ h4 {
     }
     &__title {
         margin-bottom: 39px;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 54px;
+        }
     }
     &__subtitle {
         margin-bottom: 50px;
         color: $gray6;
         font-size: 24px;
         display: block;
+
+        @media screen and (max-width: 1600px) {
+            font-size: 18px;
+        }
     }
     &__buttons {
         display: flex;
@@ -1122,6 +1366,16 @@ h4 {
         font-weight: 500;
         margin-left: 36px;
         display: block;
+
+        @media screen and (max-width: 1600px) {
+            font-size: 18px;
+            margin-left: 30px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 16px;
+            margin-left: 20px;
+        }
     }
 }
 
@@ -1154,10 +1408,18 @@ h4 {
 // Partners
 
 .partners {
-    margin-bottom: 190px;
+    margin-bottom: 350px;
 
     @media screen and (max-width: 1600px) {
-        margin-bottom: 140px;
+        margin-bottom: 160px;
+    }
+
+    @media screen and (max-width: 1400px) {
+        margin-bottom: 150px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 130px;
     }
 }
 
@@ -1188,6 +1450,10 @@ h4 {
         @media screen and (max-width: 1600px) {
             margin-bottom: 60px;
         }
+
+        @media screen and (max-width: 1400px) {
+            margin-bottom: 40px;
+        }
     }
 
     &_rtl {
@@ -1203,45 +1469,64 @@ h4 {
 
 .contacts {
     position: relative;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 
-    @media screen and (max-width: 1600px)  {
-        margin-bottom: 60px;
+    @media screen and (max-width: 1600px) {
+        margin-bottom: 22px;
+    }
+
+    @media screen and (max-width: 1400px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 2px;
     }
 
     &:before {
         content: "";
         width: 50%;
-        height: 87%;
+        height: 100%;
         position: absolute;
-        top: 160px;
+        top: 0;
         left: 0;
         border-radius: 0 30px 30px 0;
         z-index: -1;
         background: linear-gradient(131.62deg, #FFFDF5 4.88%, #FFF5F5 85.46%);
+    
+        @media screen and (max-width: 1200px) {
+            width: 60%;
+        }
     }
 
     &__form {
         display: flex;
         flex-direction: column;
-        padding: 80px 115px 0 0;
+        padding: 0px 115px 0 0;
 
         @media screen and (max-width: 1400px) {
             padding-right: 65px;
         }
 
         &-title {
-            @media screen and (max-width: 1845px) {
-                font-size: 72px;
-            }
+            position: absolute;
+            top: -160px;
+            
+            width: max-content;
 
             @media screen and (max-width: 1600px) {
-                font-size: 64px;
+                top: -47px;
             }
         }
 
         &-wrapper {
-            margin-top: 40px;
+            position: relative;
+            padding-bottom: 75px;
+            padding-top: 110px;
+
+            @media screen and (max-width: 1600px)  {
+                padding-top: 173px;
+            }
 
             @media screen and (max-width: 1500px) {
                 padding-left: 90px;
@@ -1311,10 +1596,12 @@ h4 {
     }
 
     &__info-wrapper {
-        padding: 65px 0px 0 100px;
+        padding: 0px 0px 0 100px;
+        margin-top: -90px;
 
         @media screen and (max-width: 1600px) {
-            padding: 85px 00px 0 100px;
+            margin-top: 0;
+            padding-top: 10px;
         }
 
         @media screen and (max-width: 1400px) {
@@ -1333,12 +1620,23 @@ h4 {
         margin: 0;
         padding: 0;
 
+        @media screen and (max-width: 1200px) {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 40px;
+            width: fit-content;
+        }
+
         li {
             & + li {
                 margin-left: 7%;
 
                 @media screen and (max-width: 1400px) {
                     margin-left: 5%;
+                }
+
+                @media screen and (max-width: 1200px) {
+                    margin-left: 0;
                 }
             }
         }
@@ -1366,6 +1664,10 @@ h4 {
         @media screen and (max-width: 1600px) {
             font-size: 24px;
         }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 18px;
+        }
     }
 
     &__info-suptitle {
@@ -1374,6 +1676,10 @@ h4 {
         font-weight: 500;
         text-transform: uppercase;
         font-size: 18px;
+
+        @media screen and (max-width: 1600px) {
+            margin-bottom: 40px;
+        }
     }
 
     &__info-email {
@@ -1384,6 +1690,10 @@ h4 {
         @media screen and (max-width: 1600px) {
             margin-bottom: 60px;
         }
+
+        @media screen and (max-width: 1200px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__info-phones {
@@ -1393,6 +1703,10 @@ h4 {
 
         @media screen and (max-width: 1600px) {
             margin-bottom: 50px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            margin-bottom: 30px;
         }
         
         span {
@@ -1409,7 +1723,15 @@ h4 {
     padding: 40px 0;
 
     @media screen and (max-width: 1600px) {
-        padding: 30px 0;
+        padding: 28px 0;
+    }
+
+    @media screen and (max-width: 1400px) {
+        padding: 20px 0;
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding: 38px 0;
     }
 
     .splide__slide {
