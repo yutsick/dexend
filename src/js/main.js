@@ -6,7 +6,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         type: 'loop',
         perMove: 1,
         autoWidth: true,
-        waitForTransition: false,
+        waitForTransition: false
     } );
     splide.mount();
   } );
