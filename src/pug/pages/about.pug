@@ -1,0 +1,290 @@
+extends ../layout/layout.pug
+block header
+  .container-fluid 
+    .nav__wrapper.position-relative
+      ul.header__links.page__links
+        li.header__link
+          a(href='#')
+            | Behance
+            img(src='img/arrow_header-link.svg' alt='arrow_header-link')
+        li.header__link
+          a(href='#')
+            | Dribbble
+            img(src='img/arrow_header-link.svg' alt='arrow_header-link')
+        li.header__link
+          a(href='#')
+            | Facebook
+            img(src='img/arrow_header-link.svg' alt='arrow_header-link')
+        li.header__link
+          a(href='#')
+            | Twitter
+            img(src='img/arrow_header-link.svg' alt='arrow_header-link')
+        li.header__link
+          a(href='#')
+            | Medium
+            img(src='img/arrow_header-link.svg' alt='arrow_header-link')
+        li.header__link
+          a(href='#')
+            | Linkedin
+            img(src='img/arrow_header-link.svg' alt='arrow_header-link')
+
+block content
+  section.about.about__page
+    .container-fluid.container-fluid_small
+      .about__wrapper
+        .about__heading
+          span.about__suptitle team PROFILE
+          h2.about__title About us
+        p.about__text
+          | Dexend is built on the principles of efficiency and speed. Since the creation of our team in 2017, we have been serving only global markets with the goal of designing and delivering the best possible digital products. We have worked on hundrets of cases, served dozens of industries, and developed thousands of screens for beautiful and streamlined applications.
+        .about__info-wrapper
+          a.btn.btn-circle.about__info-btn(href='#')
+          img(src='img/about-us_stickers.png' alt='')
+          .about__info
+            .about__card
+              span.about__info-title Established since
+              span.about__info-value 2017
+            .about__card
+              span.about__info-title Design Laboratory
+              span.about__info-value Kyiv, Ukraine
+            .about__card
+              span.about__info-title Number of Industries
+              span.about__info-value 50+
+            .about__card
+              span.about__info-title Specialization
+              span.about__info-value Digital Products
+  section.partners
+    .partners-slider.partners-slider_ltr.splide.about-page
+      .splide__track
+        ul.splide__list
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Negative.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Fluxio.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Fiveblocks.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_GDR.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Gowombat.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_GG.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Premedics.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Cyberjin.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_CardiacKrock .png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Monneo.png' alt='')
+         
+    .partners-slider.partners-slider_rtl.splide.about-page
+      .splide__track
+        ul.splide__list
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Monneo.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_EasyDentalMarketing.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Goexplore.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Alpharealty.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Kardstech.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Rabat.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Relate.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_MakeVideoLink.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Passparto.png' alt='')
+          li.splide__slide
+            a.partner(href='#')
+              img(src='img/Logo_Saveenvironment.png' alt='')
+  section.solutions
+    .container-fluid
+      .d-block.d-md-none
+        img(src='img/page-about-solutions.png' alt='')
+      .solution-wrapper
+        .container
+         .solutions__header
+          h2.section__title Solutions
+          p.section__description
+            | Every project starts with an idea. Our team takes brilliant ideas, prototypes them into MVP, and polishes them with astonishing modern UI design, maintaining ultimate UX excellence. Crafting top-notch tools for everyday life is a magnificent way to express yourself and make this world a better place. We love apps that help improve lives and disrupt industries. And we will make sure that your product - whatever it is - will see life in the most polished way.
+
+          .row
+            .col-md-6 
+              .specialization__content-item
+                .specialization__content-box
+                  img(width='90' height='90' src='img/specialization-icon1.svg' alt='Web design')
+                  h4.specialization__content-title Web Development
+                  p.specialization__content-description 
+                    | We craft functional and fluid responsive websites and web-based applications that are of the highest industry standards
+            .col-md-6
+              .specialization__content-item
+                .specialization__content-box
+                  img(width='90' height='90' src='img/specialization-icon1.svg' alt='Web design')
+                  h4.specialization__content-title Web Development
+                  p.specialization__content-description 
+                    | We craft functional and fluid responsive websites and web-based applications that are of the highest industry standards
+            .col-md-6
+              .specialization__content-item
+                .specialization__content-box
+                  img(width='90' height='90' src='img/specialization-icon1.svg' alt='Web design')
+                  h4.specialization__content-title Web Development
+                  p.specialization__content-description 
+                    | We craft functional and fluid responsive websites and web-based applications that are of the highest industry standards
+            .col-md-6
+              .specialization__content-item
+                .specialization__content-box
+                  img(width='90' height='90' src='img/specialization-icon1.svg' alt='Web design')
+                  h4.specialization__content-title Web Development
+                  p.specialization__content-description 
+                    | We craft functional and fluid responsive websites and web-based applications that are of the highest industry standards
+  .clear
+  section.cases
+    .container-fluid 
+      .cases-wrapper
+        .container  
+          .cases__header
+            h2.section__title Cases <br>Visualisation 
+            span.feedback__subtitle
+              |Showreel of our most prominent cases
+            a.btn-red(href='#') See the Cases Portoflio
+  section.statistics.page__about
+    .container-fluid
+      .container
+        .statictic__header.text-center 
+          h2.section__title Mistery in Craft 
+          p.section__description 
+            | Dexend employs only selected masters of the design and coding crafts. Our selection process is quite unique, and we are not growing the team for the sake of growth. Our ultimate aim is to contain only those professionals who can truly bring unmatched delivery value to the project. The team is strong with its senior developers and designers
+      .statistics__wrapper
+        .statistics__item
+          .statistics__item-content
+            span.statistics__title Established
+            span.statistics__value 2017
+        
+        .statistics__item
+          .statistics__item-content
+            span.statistics__title Completed Cases
+            span.statistics__value 640+
+        
+        .statistics__item
+          .statistics__item-content
+            span.statistics__title Team Size
+            span.statistics__value 25
+        
+        .statistics__item
+          .statistics__item-content
+            span.statistics__title Markets Served
+            span.statistics__value 50+
+  section.team.page__about
+    .container-fluid
+      .team-slider.splide
+        .splide__track
+          ul.splide__list
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo1.jpg' alt='')
+                span.team-slider__card-name Andrey Sheremeta
+                span.team-slider__card-profession CEO Betasprint
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo2.jpg' alt='')
+                span.team-slider__card-name Tung Chang
+                span.team-slider__card-profession Project manager
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo3.jpg' alt='')
+                span.team-slider__card-name Tung Chang
+                span.team-slider__card-profession Project manager
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo4.jpg' alt='')
+                span.team-slider__card-name Andrey Sheremeta
+                span.team-slider__card-profession CEO Betasprint
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo5.jpg' alt='')
+                span.team-slider__card-name Tung Chang
+                span.team-slider__card-profession Project manager
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo1.jpg' alt='')
+                span.team-slider__card-name Tung Chang
+                span.team-slider__card-profession Project manager
+            li.splide__slide
+              .team-slider__card
+                img(src='img/our-team_photo3.jpg' alt='')
+                span.team-slider__card-name Andrey Sheremeta
+                span.team-slider__card-profession CEO Betasprint
+  section.we_work 
+    .container 
+      .row.align-items-center 
+        .col-lg-4 
+          h2.section__title We work <br>for result
+        .col-lg-8 
+          .bg-red-light.d-flex.justify-content-between 
+            .rating 
+              .text-3-grey Overall rating
+                .d-flex.align-items-center
+                  img(src="img/big-star-icon.svg", alt="")
+                  span.star 4.8
+            .projects-number 
+              .text-3-grey Number of Projects
+              span 640+
+  section.testimonials  
+    .container-fluid.overflow-clip.position-relative  
+      .container
+        .testimonials-slider.splide.position-absolute
+          .splide__track
+            - let i = 0;
+            ul.splide__list
+              while i < 4 
+                - i++;
+                li.splide__slide
+                  .testimonials-slider__card
+                    .d-flex 
+                      .icon 
+                        img(src="img/logo-icon3.png", alt="")
+                      .slide_head
+                        p.slide__name 
+                          |Princeton University
+                        .rating.d-flex.align-items-center
+                          .stars.d-flex.align-items-center
+                            - let k = 0;
+                            - let max = Math.floor(Math.random() * 5) + 1;
+                              while k < max 
+                                - k++;
+                                img(src="/img/star-icon.png", alt="", class="star-img")
+                          span.stars-count=max
+                        .time
+                          span 240+
+                          |  hours
+                    .testimonial-text 
+                      p 
+                        |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id scelerisque quam ac amet est sed. Suspendisse quisque nec molestie sagittis. Venenatis, iaculis elit, quam at eu orci mattis. Rhoncus gravida vulputate vitae vehicula ultricies.
+                      p 
+                        |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id scelerisque quam ac amet est sed. Suspendisse quisque nec molestie sagittis. Venenatis, iaculis elit, quam at eu orci mattis. Rhoncus gravida vulputate vitae vehicula ultricies.
+             
+  

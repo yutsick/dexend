@@ -8,6 +8,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         autoWidth: true,
         waitForTransition: false
     } );
+    
     splide.mount();
   } );
 
@@ -70,3 +71,18 @@ document.addEventListener( 'DOMContentLoaded', function() {
     } );
     splide.mount();
   } );
+
+document.addEventListener('DOMContentLoaded', function () {
+  let splide = new Splide('.testimonials-slider', {
+    pagination: false,
+    arrows: false,
+    focus: 2,
+    type: 'loop',
+    perMove: 1,
+    autoWidth: true,
+    waitForTransition: false,
+    gap: '50px'
+  });
+
+  splide.mount();
+});

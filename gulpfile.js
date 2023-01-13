@@ -6,7 +6,7 @@
 const gulp = require('gulp');
 
 // Модуль (плагин) для очистки директории
-const cleans = require('del');
+//const cleans = require('del');
 
 // Модуль (плагин) для конкатенации (объединения файлов)
 const concat = require('gulp-concat');
@@ -29,7 +29,7 @@ const rigger = require('gulp-rigger');
 const pug = require('gulp-pug');
 
 // Модуль (плагин) для sass
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 
 // *************************************************************************************** //
 // ************************************** Константы ************************************** //
@@ -72,7 +72,7 @@ function scssStyles() {
     return gulp.src(scssFiles)
 
         //Минификация CSS
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
 
         // Копирование CSS в папку assets
         .pipe(gulp.dest('./src/css'))
@@ -151,9 +151,9 @@ function copy_img() {
 
 
 // Удалить всё в указанной папке
-function clean() {
-    return cleans(['build/*'])
-}
+// function clean() {
+//     return cleans(['build/*'])
+// }
 
 
 // Просматривать файлы
@@ -213,24 +213,24 @@ gulp.task('sass', scssStyles);
 gulp.task('scripts', scripts);
 
 // Таск для очистки папки build
-gulp.task('cleans', clean);
+//gulp.task('cleans', clean);
 
 // Таск для Копирования htaccess
-gulp.task('htaccess', function () {
-    return gulp.src('src/.htaccess')
-        .pipe(gulp.dest('build'))
-})
+// gulp.task('htaccess', function () {
+//     return gulp.src('src/.htaccess')
+//         .pipe(gulp.dest('build'))
+// })
 
 // Таск для Копирования favicon
-gulp.task('favicon', function () {
-    return gulp.src('src/favicon.*')
-        .pipe(gulp.dest('build'))
-})
+// gulp.task('favicon', function () {
+//     return gulp.src('src/favicon.*')
+//         .pipe(gulp.dest('build'))
+// })
 
 // Таск для копирование файлов в build
 gulp.task('fonts', function () {
     return gulp.src('src/fonts/*')
-     .pipe(gulp.dest(function (file) {
+        .pipe(gulp.dest(function (file) {
             let path = file.base;
             return path.replace('src', 'build');
         }));
@@ -238,17 +238,17 @@ gulp.task('fonts', function () {
 
 gulp.task('pug', function () {
     return gulp.src('src/pug/pages/*.pug')
-    .pipe(pug({
-        pretty: true
-    }))
-    .pipe(gulp.dest('build'));
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest('build'));
 })
 
 // Таск для отслеживания изменений
 gulp.task('watch', watch);
 
 // Таск для удаления файлов в папке build и запуск styles и scripts
-gulp.task('build', gulp.series(clean, files, scssStyles, gulp.parallel(styles, scripts, "img", "htaccess", "favicon", "fonts", "pug")));
+gulp.task('build', gulp.series(files, scssStyles, gulp.parallel(styles, scripts, "img", "pug")));
 
 // Таск запускает таск build и watch последовательно
-gulp.task('dev', gulp.series('build', 'watch'));
+gulp.task('default', gulp.series('build', 'watch'));
